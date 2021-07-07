@@ -1,0 +1,64 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+
+
+
+    <div class="authBlock2">
+      <h1 style="margin-left: 150px;">Create Your Account</h1><br>
+      <span style="margin-left: 100px;">Lorem. ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span><br>
+      <span style="margin-left: 120px;">nonumy eirmod tempor invidunt ut labore et dolore magna.</span>
+      <table style="margin-left: 50px;">
+        <tr>
+          <td>
+            <div class="formGroup" style="margin-left: 30px;">
+              <input type="text" class="formControl2" placeholder="Name" #name required>
+            </div>
+          </td>
+          <td>
+            <div class="formGroup" style="margin-left: 30px;">
+              <input type="text" class="formControl2" placeholder="Lastname" #lastname required>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table style="margin-left: 50px;">
+        <tr>
+          <div class="formGroup" style="margin-left: 30px; width: 200%;">
+            <input type="email" class="formControl2" placeholder="Email Address" #userEmail required>
+          </div>
+
+        </tr>
+        <tr>
+          <td>
+            <div class="formGroup" style="margin-left: 30px;">
+              <input type="password" class="formControl2" placeholder="Password" #userPwd required>
+            </div>
+          </td>
+          <td>
+            <div class="formGroup" style="margin-left: 30px;">
+              <input type="password" class="formControl2" placeholder="Confirm Password" required>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <div class="formGroup">
+              <input style="width: 100px; height: 50px;" type="button" class="btn btnPrimary" value="Sign Up"
+                (click)="authService.SignUp(userEmail.value, userPwd.value)">
+            </div>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+      <div class="redirectToLogin">
+        <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+      </div>
+    </div>
+
+  </div>

@@ -1,0 +1,78 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+
+    <table>
+      <tr>
+
+        <td>
+          <div class="authBlock" style="margin-left: 200px;">
+
+            <h1>Login into your account </h1>
+            <div class="formGroup">
+              <input type="text" class="formControl" placeholder="Username" #userName required>
+            </div>
+
+            <div class="formGroup">
+              <input type="password" class="formControl" placeholder="Password" #userPassword required>
+            </div>
+
+
+            <div class="formGroup">
+              <input type="button" class="btn btnPrimary" style="background-color: blue;" value="Log in"
+                (click)="authService.SignIn(userName.value, userPassword.value)">
+            </div>
+
+            <div class="formGroup">
+              <span class="or"><span class="orInner">Or</span></span>
+            </div>
+
+
+            <div class="formGroup">
+              <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+                <i class="fab fa-google-plus-g"></i>
+                Log in with Google
+              </button>
+            </div>
+
+            <div class="forgotPassword">
+              <span routerLink="/forgot-password">Forgot Password?</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <img style="margin-left: 80px;" class="fit-picture" st src="assets/Group.png"><br>
+          <span style="margin-left: 40px;">Lorem ipsum dolor sit amet, constetur sad pscing elitr, sed diam nonumy
+            eirmod tempor</span><br>
+          <span style="margin-left: 20px;">invidunt ut labore et dolore magna Lorem ipsum dolor si amet, consetetur
+            sadipcing elitr, sed</span><br>
+          <img style="margin-left: 150px;" st src="assets/app-store.png">
+          <img style="margin-left: 50px;" st src="assets/google-play.png">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="redirectToLogin">
+
+            <span style="color: black;">Don't have an account?<span class="redirect" routerLink="/register-user"
+                style="color: black;"> Sign Up</span></span>
+          </div>
+        </td>
+        <td>
+
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+  </div>
+
+</div>
